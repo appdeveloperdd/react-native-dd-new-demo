@@ -8,10 +8,7 @@ interface KlaviyoModule {
   setPushToken(pushToken: string): void;
 }
 
-const KlaviyoBridge: KlaviyoModule =
-  Platform.OS === 'android'
-    ? NativeModules.DdNewDemoModule
-    : NativeModules.DdNewDemo;
+const KlaviyoBridge: KlaviyoModule = NativeModules.DdNewDemo;
 
 class Klaviyo {
   static initializeKlaviyo(publicKey: string): void {
