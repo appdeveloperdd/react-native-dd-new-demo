@@ -8,30 +8,45 @@ class DdNewDemo: NSObject {
  @objc
   func initializeKlaviyo(_ publicKey : String) {
     print("initializeKlaviyo")
-    Klaviyo.setupWithPublicAPIKey(apiKey: publicKey)
+//    KlaviyoSDK().initialize(with: publicKey)
+//    Klaviyo.setupWithPublicAPIKey(apiKey: publicKey)
   }
   
   @objc
   func setProfile(_ email : String) {
     print("setProfile")
-    Klaviyo.sharedInstance.setUpUserEmail(userEmail: email)
+//    KlaviyoSDK().set(email: email)
+
+//    Klaviyo.sharedInstance.setUpUserEmail(userEmail: email)
   }
   
   @objc
   func createEvent(_ eventName: String,_ properties : NSDictionary) {
     print("createEvent")
-    Klaviyo.sharedInstance.trackEvent(eventName: eventName, properties:properties)
+      
+      let propertiesDictionary = properties as? [String: Any]
+
+//      let event = Event(name:Event.EventName.CustomEvent(eventName),properties:propertiesDictionary)
+////      guard let event = try? Event(name: Event.EventName.CustomEvent(eventName), properties: propertiesDictionary) else {
+////        print("Failed to create Event object.")
+////        return
+////      }
+//      // Call the create
+//      KlaviyoSDK().create(event: event)
+//    Klaviyo.sharedInstance.trackEvent(eventName: eventName, properties:properties)
   }
   
   @objc
   func setPushToken(_ pushToken: String) {
     print("setPushToken")
-    
     // Convert the hexadecimal string to Data
     if let deviceTokenData = dataFromHexString(pushToken) {
+
         // Call the function with the deviceTokenData
-      Klaviyo.sharedInstance.addPushDeviceToken(deviceToken: deviceTokenData)
-      
+//        KlaviyoSDK().set(pushToken: deviceTokenData)
+
+//        Klaviyo.sharedInstance.addPushDeviceToken(deviceToken: deviceTokenData)
+
       print("push token sent to klaviyo")
     } else {
       print("Invalid device token string format.")

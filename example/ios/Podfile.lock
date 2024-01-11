@@ -1,4 +1,5 @@
 PODS:
+  - AnyCodable-FlightSchool (0.6.7)
   - boost-for-react-native (1.63.0)
   - DoubleConversion (1.1.6)
   - FBLazyVector (0.63.4)
@@ -19,7 +20,8 @@ PODS:
     - DoubleConversion
     - glog
   - glog (0.3.5)
-  - KlaviyoSwift (1.5.0)
+  - KlaviyoSwift (2.4.0):
+    - AnyCodable-FlightSchool
   - RCTRequired (0.63.4)
   - RCTTypeSafety (0.63.4):
     - FBLazyVector (= 0.63.4)
@@ -186,7 +188,7 @@ PODS:
     - React-cxxreact (= 0.63.4)
     - React-jsi (= 0.63.4)
   - React-jsinspector (0.63.4)
-  - react-native-dd-new-demo (0.1.1):
+  - react-native-dd-new-demo (0.1.7):
     - KlaviyoSwift
     - React-Core
   - React-RCTActionSheet (0.63.4):
@@ -284,6 +286,7 @@ DEPENDENCIES:
 
 SPEC REPOS:
   trunk:
+    - AnyCodable-FlightSchool
     - boost-for-react-native
     - KlaviyoSwift
 
@@ -344,13 +347,14 @@ EXTERNAL SOURCES:
     :path: "../node_modules/react-native/ReactCommon/yoga"
 
 SPEC CHECKSUMS:
+  AnyCodable-FlightSchool: 261cbe76757802b17d471b9059b21e6fa5edf57b
   boost-for-react-native: 39c7adb57c4e60d6c5479dd8623128eb5b3f0f2c
   DoubleConversion: cde416483dac037923206447da6e1454df403714
   FBLazyVector: 3bb422f41b18121b71783a905c10e58606f7dc3e
   FBReactNativeSpec: f2c97f2529dd79c083355182cc158c9f98f4bd6e
   Folly: b73c3869541e86821df3c387eb0af5f65addfab4
   glog: 40a13f7840415b9a77023fbcae0f1e6f43192af3
-  KlaviyoSwift: 7627dd618a02c58b593f17e7be2018e545a4b33b
+  KlaviyoSwift: 9c7abb283be65363cd5e52f88fd7628cf624d867
   RCTRequired: 082f10cd3f905d6c124597fd1c14f6f2655ff65e
   RCTTypeSafety: 8c9c544ecbf20337d069e4ae7fd9a377aadf504b
   React: b0a957a2c44da4113b0c4c9853d8387f8e64e615
@@ -361,7 +365,7 @@ SPEC CHECKSUMS:
   React-jsi: a0418934cf48f25b485631deb27c64dc40fb4c31
   React-jsiexecutor: 93bd528844ad21dc07aab1c67cb10abae6df6949
   React-jsinspector: 58aef7155bc9a9683f5b60b35eccea8722a4f53a
-  react-native-dd-new-demo: 2ddb6137922808575a34bc17592c0551a6cb2f9b
+  react-native-dd-new-demo: fee0b4f037bb9d78b0eafd93f156ef7bf972148d
   React-RCTActionSheet: 89a0ca9f4a06c1f93c26067af074ccdce0f40336
   React-RCTAnimation: 1bde3ecc0c104c55df246eda516e0deb03c4e49b
   React-RCTBlob: a97d378b527740cc667e03ebfa183a75231ab0f0
@@ -374,6 +378,6 @@ SPEC CHECKSUMS:
   ReactCommon: 73d79c7039f473b76db6ff7c6b159c478acbbb3b
   Yoga: 4bd86afe9883422a7c4028c00e34790f560923d6
 
-PODFILE CHECKSUM: af0843a0a9347570f5940ce73dcd25144c675b82
+PODFILE CHECKSUM: 67a42a4bc4708539697480d69e5991fb514488e9
 
 COCOAPODS: 1.12.1
